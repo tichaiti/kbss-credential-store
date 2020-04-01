@@ -5,7 +5,7 @@ set -e
 if [[ -z "${CONSUL_URL}" ]]; then
   cat << EOF > /opt/vendor/vault/config.json
   storage "file" {
-    path = "/tmp/vault/data"
+    path = "/opt/vendor/vault/data"
   }
 
   disable_mlock = true
